@@ -1,0 +1,17 @@
+{
+  "environment": "web",
+  "format": "html",
+  "prefix": "https://storage.googleapis.com",
+  "mainga": "UA-49880327-14",
+  "updated": "2024-05-13T23:22:32-05:00",
+  "id": "portfolio-HTML",
+  "duration": 65,
+  "title": "Codelab: Crea tu primer portafolio con HTML y CSS",
+  "summary": "Creat tu primer portafolio con HTML y CSS",
+  "source": "proyecto-programacion-HTML.md",
+  "theme": "",
+  "status": null,
+  "category": null,
+  "tags": [],
+  "url": "portfolio-HTML"
+}
