@@ -36,7 +36,7 @@ a {
 }
 
 .section {
-  padding: 40px 0;
+  padding: 20px 0;
   overflow: hidden;
 }
 
@@ -151,7 +151,7 @@ a {
   overflow: hidden;
   background: var(--main-color);
   background: linear-gradient(rgba(29, 38, 113, 0.6), rgba(29, 38, 113, 0.6)),
-    url("../img/developer.jpg");
+    url("../img/developer.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
