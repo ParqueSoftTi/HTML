@@ -36,7 +36,7 @@ a {
 }
 
 .section {
-  padding: 40px 0;
+  padding: 20px 0;
   overflow: hidden;
 }
 
@@ -151,7 +151,7 @@ a {
   overflow: hidden;
   background: var(--main-color);
   background: linear-gradient(rgba(29, 38, 113, 0.6), rgba(29, 38, 113, 0.6)),
-    url("../img/developer.jpg");
+    url("../img/developer.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -200,6 +200,18 @@ img {
   text-align: center;
 }
 
+.box img {
+  width: 100%;
+  border: 2px solid var(--secondary-color);
+  border-radius: 20px;
+}
+
+.box:hover img {
+  transform: translateY(-15px);
+  border: 2px solid var(--primary-color);
+  transition: 0.3s;
+}
+
 .hireme {
   text-align: center;
   display: flex;
@@ -210,27 +222,11 @@ img {
 .hireme p {
   padding-bottom: 20px;
 }
-.box {
-  float: left;
-  width: 33.3%;
-  padding: 20px;
-}
 
-.box img {
-  width: 100%;
-  border: 2px solid var(--secondary-color);
-  border-radius: 20px;
-}
-
-.box a:hover img {
-  transform: translateY(-15px);
-  border: 2px solid var(--primary-color);
-  transition: 0.3s;
-}
-
-.box .selected {
-  transform: scale(1.1);
-  border: 2px solid var(--primary-color);
+.card-projects {
+  display: grid; /* Define el contenedor como una cuadrícula */
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas de igual tamaño */
+  gap: 20px; /* Espacio de 20px entre filas y columnas */
 }
 
 /* Footer */
@@ -262,70 +258,32 @@ img {
   text-align: center;
 }
 
-/* General hero */
-.hero {
-  background: var(--main-color);
-  height: 50vh;
-  padding: 50px;
-}
-
-.hero-header-text {
-  height: 100%;
-  width: 60%;
-  margin: auto;
+/* Contact */
+.card-info {
+  display: grid; /* Define el contenedor como una cuadrícula */
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas de igual tamaño */
+  gap: 20px; /* Espacio de 20px entre filas y columnas */
   text-align: center;
-  display: grid;
-  place-content: center;
 }
 
-.hero-title {
-  font-size: 3em;
-  padding-bottom: 20px;
+.form-map {
+  margin: 30px;
+  display: grid; /* Define el contenedor como una cuadrícula */
+  grid-template-columns: repeat(2, 1fr); /* 2 columnas de igual tamaño */
+  gap: 20px;
 }
 
-.hero-title span {
-  color: var(--primary-color);
-}
-
-/* Contact Form */
-.contact .box-contact-features {
-  float: left;
-  width: 33.3%;
-  text-align: center;
-  padding-bottom: 20px;
-}
-
-.contact .box-contact-features i {
-  padding-bottom: 20px;
-}
-
-.contact .box-contact-features p {
-  line-height: 0.8em;
-}
-
-.contact .features-contact .box-form {
-  float: left;
-  width: 50%;
-  padding: 60px 10px 20px 10px;
-}
-
-.contact .features-contact .box-form iframe {
-  width: 100%;
+.form-map iframe {
   height: 400px;
+  width: 100%;
 }
 
-/* Contact Form */
-.contact .contact-form .single-form {
+.box-form .input-form {
   margin-bottom: 20px;
 }
 
-.contact-form label {
-  display: block;
-  margin-bottom: 5px;
-}
-
-.contact-form input,
-.contact-form textarea {
+.box-form input,
+.box-form textarea {
   width: 100%;
   padding: 10px;
   border: 2px var(--secondary-color) solid;
@@ -334,18 +292,22 @@ img {
   color: var(--secondary-color);
 }
 
-.contact-form input:focus,
-.contact-form textarea:focus {
+.box-form input:focus,
+.box-form textarea:focus {
   background-color: var(--secondary-color);
   color: var(--main-color);
 }
 
-.contact-form textarea {
+.box-form textarea {
   height: 200px;
 }
 
-.contact-form input:focus,
-.contact-form textarea:focus {
+.box-form input:focus,
+.box-form textarea:focus {
   outline: none;
   border-color: var(--main-color);
+}
+
+.box-form button {
+  width: 100%;
 }
