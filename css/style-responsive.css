@@ -31,15 +31,13 @@
     font-size: 2em;
   }
 
+  .banner-title {
+    font-size: 2em;
+  }
+
   /* Banner */
   .banner-header-text {
     width: 80%;
-  }
-
-  /* Hero Title */
-  .hero-title {
-    line-height: normal;
-    font-size: 2.2em;
   }
 
   /* Portfolio */
@@ -47,29 +45,28 @@
     display: none;
   }
 
-  .box {
-    float: none;
-    width: 100%;
-    padding: 10px;
+  .card-projects {
+    display: grid; /* Define el contenedor como una cuadrícula */
+    grid-template-columns: repeat(1, 1fr); /* 3 columnas de igual tamaño */
+    gap: 20px; /* Espacio de 20px entre filas y columnas */
   }
 
   /* Contact */
-  .contact {
-    height: 100%;
+  .card-info {
+    display: grid; /* Define el contenedor como una cuadrícula */
+    grid-template-columns: repeat(1, 1fr); /* 1 columnas de igual tamaño */
+
+    text-align: center;
   }
 
-  .contact .box-contact-features {
-    float: none;
-    width: 100%;
-  }
-
-  .contact .features-contact .box-form {
-    float: none;
-    width: 100%;
+  .form-map {
+    margin: 30px;
+    display: grid; /* Define el contenedor como una cuadrícula */
+    grid-template-columns: repeat(1, 1fr); /* 2 columnas de igual tamaño */
+    gap: 20px;
   }
 
   /* Single Project */
-
   .single-project .description h4 {
     font-size: 1em;
   }
